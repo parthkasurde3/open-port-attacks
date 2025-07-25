@@ -1,0 +1,20 @@
+
+# Nmap Command Logs (Example)
+
+> SYN Stealth Scan:
+sudo nmap -sS -sV -O 192.168.35.128
+
+Discovered open ports:
+- 22/tcp: ssh
+- 80/tcp: http
+- 443/tcp: https
+
+> SSH Brute Force (with NSE):
+sudo nmap -p 22 --script ssh-brute 192.168.35.128
+
+Sample brute force attempts:
+admin:admin
+root:root
+guest:guest
+admin:12345
+webadmin:webadmin

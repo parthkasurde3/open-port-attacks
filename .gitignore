@@ -1,0 +1,22 @@
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# Compiled files
+*.pyc
+__pycache__/
+
+# Packet captures (sensitive data)
+*.pcap
+*.pcapng
+
+# Backup files
+*~
+
+# Log files
+*.log

@@ -1,0 +1,32 @@
+
+# Nmap and Enumeration Logs
+
+Commands Used:
+---------------
+1. nmap -sn 192.168.35.128/22
+2. nmap -sS 192.168.114.130
+3. nmap -sS 192.168.35.128/22
+4. nmap -v -A kali.org
+5. nmap -v -A testfire.net
+6. cd /usr/share/nmap/scripts
+7. ls
+8. ls -l | grep ssh
+9. nmap --script ssh-brute.nse -p 22 192.168.35.129
+
+Findings:
+----------
+- Detected hosts: 772 alive
+- Open ports: 22, 80, 443
+- Service enumeration: Apache Tomcat, ssh-hostkey, ssl-cert
+- OS fingerprinting: Windows XP/7, Linux variants
+- NSE Brute-force attempted combinations like:
+  - admin:admin
+  - root:root
+  - guest:12345
+- Wireshark showed TCP handshake and resets (RST)
+
+Packet Captures:
+-----------------
+- Captured interface: eth0
+- Sample TCP connection attempt to port 5963 from 58891
+- TLS handshakes and SSL certificate exchanges verified
